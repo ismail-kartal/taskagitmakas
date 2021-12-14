@@ -79,14 +79,11 @@ function zarat() {
     switch (true) {
         case pc1 > 0 && pc1 <= 33:
             pc1 = "tas";
-            console.log("burageldi");
             break;
         case pc1 > 33 && pc1 <= 66:
-            console.log("burageldi");
             pc1 = "kagıt";
             break;
         case pc1 > 66 && pc1 <= 100:
-            console.log("burageldi");
             pc1 = "makas";
             break;
     }
