@@ -10,6 +10,8 @@ function zarat() {
     console.log(pc1);
     console.log(pc2);
 
+
+    //gelen random değere göre 3 ihtimalden birisi olacak şekilde değer atanmasını sağladık.
     switch (true) {
         case pc1 > 0 && pc1 <= 33:
             pc1 = "tas";
@@ -22,6 +24,7 @@ function zarat() {
             break;
     }
     console.log(pc1);
+    //gelen random değere göre 3 ihtimalden birisi olacak şekilde değer atanmasını sağladık.
     switch (true) {
         case pc2 > 0 && pc2 <= 33:
             pc2 = "tas";
@@ -35,6 +38,8 @@ function zarat() {
     }
     console.log(pc2);
 
+
+    //pc1 ve pc2 değerlerini atanan ihtimallere göre karşılaştırdık
     //pc1 = taş ihtimalleri
     if (pc1 === "tas" && pc2 === "tas") {
         sonuc = "berabere";
