@@ -1,6 +1,8 @@
 let pc1;
 let pc2;
 let sonuc;
+let toplamsol = 0;
+let toplamsag = 0;
 
 function zarat() {
 
@@ -47,30 +49,36 @@ function zarat() {
     } else if (pc1 === "tas" && pc2 === "kagıt") {
         sonuc = "kazanan pc2"
         console.log("kazanan pc2");
+        ++toplamsag;
     } else if (pc1 === "tas" && pc2 === "makas") {
         sonuc = "kazanan pc1";
         console.log("kazanan pc1");
+        ++toplamsol;
     }
 
     //pc1 = kagıt ihtimalleri
     if (pc1 === "kagıt" && pc2 === "tas") {
         sonuc = "kazanan pc1";
         console.log("kazanan pc1");
+        ++toplamsol;
     } else if (pc1 === "kagıt" && pc2 === "kagıt") {
         sonuc = "berabere";
         console.log("berabere");
     } else if (pc1 === "kagıt" && pc2 === "makas") {
         sonuc = "kazanan pc2";
         console.log("kazanan pc2");
+        ++toplamsag;
     }
 
     //pc1 = makas ihtimalleri
     if (pc1 === "makas" && pc2 === "tas") {
         sonuc = "kazanan pc2";
         console.log("kazanan pc2");
+        ++toplamsag;
     } else if (pc1 === "makas" && pc2 === "kagıt") {
         sonuc = "kazanan pc1";
         console.log("kazanan pc1");
+        ++toplamsol;
     } else if (pc1 === "makas" && pc2 === "makas") {
         sonuc = "berabere";
         console.log("berabere");
@@ -80,4 +88,6 @@ function zarat() {
     document.getElementById("idSol").innerHTML = pc1;
     document.getElementById("idSag").innerHTML = pc2;
     document.getElementById("idSonuc").innerHTML = sonuc;
+    document.getElementById("toplamsol").innerHTML = toplamsol;
+    document.getElementById("toplamsag").innerHTML = toplamsag;
 }
