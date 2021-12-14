@@ -5,7 +5,7 @@ let sonuc;
 function zarat() {
 
     pc1 = Math.ceil((Math.random() * 100));
-    pc2 = Math.ceil((Math.random() * 100));
+    pc2 = Math.ceil((Math.random() * 100)); //pc1 ve pc2 değişkenlerimize 0-100 arası bir değer verdik
 
     console.log(pc1);
     console.log(pc2);
